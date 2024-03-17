@@ -1,0 +1,1085 @@
+:root {
+
+    /* color variables  */
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #efefef;
+    --purple: #1C1421;
+    --yellow: #FFC400;
+    --purple2: #5d4b68;
+    --blue: #1052df;
+
+    /* typo varibale*/
+    --manrope: 'manrope', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: var(--manrope);
+    background-color: var(--white);
+}
+
+/* utilities */
+
+.m-tb70 {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.m-tb90 {
+    margin-top: 100px;
+}
+
+.m-tb100 {
+    margin-top: 350px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.m-tb10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.clr-black {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.clr-primary {
+    color: var(--yellow);
+    font-weight: 800;
+}
+
+h1 {
+    font-family: var(--manrope);
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 60px;
+    color: var(--black);
+}
+
+
+h2 {
+    font-family: var(--manrope);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--black);
+}
+
+h3 {
+    font-family: var(--manrope);
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 36px;
+    color: var(--black);
+}
+
+h4 {
+    font-family: var(--manrope);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--black);
+}
+
+h5 {
+    font-family: var(--manrope);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--black);
+}
+
+h6 {
+    font-family: var(--manrope);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--black);
+}
+
+.heading-6 {
+    font-family: var(--manrope);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--black);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .d-md-block {
+        display: none;
+    }
+}
+
+/* navbar starts from here */
+
+
+.navbar img {
+    width: 3rem;
+}
+
+.bg {
+    background-image: url(./assets/hero/bg.png);
+    height: auto;
+}
+
+.nav-top {
+    background-color: #1C1421;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .d-md-block {
+        display: none;
+    }
+}
+
+.bg-nav-mobile{
+    background-color: var(--black);
+}
+
+/* .nav-top{
+    background: transparent;
+  } */
+/* @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar {
+        background: transparent !important;
+    }
+
+} */
+
+.navbar-toggler {
+    border: 0.12rem solid #FBBF10;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    border-radius: 0.2rem;
+    border: 0.12rem solid #FBBF10;
+}
+
+/* navbar ends here */
+
+/* hero starts from here */
+
+
+.hero-img-1 {
+    position: absolute;
+    width: 24.4rem;
+    z-index: 200;
+}
+
+.hero-img-2 {
+    width: 19rem;
+    margin-left: 19rem;
+}
+
+.hero h1,
+h2 {
+    padding-left: 2rem;
+    margin-top: 6rem;
+}
+
+.hero h1 {
+    margin-top: 8rem;
+}
+
+.hero h2 {
+    margin-top: 2rem;
+}
+
+.btn {
+    padding-left: 2rem;
+}
+
+.btn-play {
+    --primary-color: var(--yellow);
+    --secondary-color: #fff;
+    --hover-color: var(--purple);
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 10px;
+    color: #1C1421;
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    text-decoration: none;
+    width: 9rem;
+
+}
+
+.btn-play .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-play .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.btn-play .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--purple);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.btn-play:hover {
+    background-color: var(--hover-color);
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+}
+
+.btn-play:hover .arrow {
+    background: var(--yellow);
+}
+
+.btn-play:hover .arrow:before {
+    right: 0;
+    border: solid var(--yellow);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+        padding-left: 22px !important;
+        margin-top: 23px;
+    }
+
+    .hero h2 {
+        font-size: 15px;
+        padding-left: 22px !important;
+    }
+
+    .btn {
+        padding-left: 22px !important;
+    }
+
+    .hero-img-1 {
+        position: absolute;
+        width: 16.4rem;
+        z-index: 200;
+        margin-top: -43px
+    }
+
+    .hero-img-2 {
+        width: 13rem;
+        margin-left: 12rem;
+        margin-top: -43px
+    }
+
+    .hero {
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* hero ends here */
+
+/* featured games starts from here */
+
+.card img {
+    border-radius: 0.8rem;
+}
+
+.card {
+    border-radius: 0.8rem;
+}
+
+.featured-item {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.featured-item img {
+    width: 11rem;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -260%);
+}
+
+.btn-more {
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 7px 18px;
+    border-radius: 0.5rem;
+    color: var(--purple);
+    border: 1px solid var(--yellow);
+    font-weight: bold;
+}
+
+.btn-more:hover {
+    background-color: #59555F;
+    color: var(--yellow);
+}
+
+/* featured games ends here */
+
+/* compete starts from here */
+
+.compete {
+    /* background-color: var(--purple); */
+    background-image: url(./assets/compete/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.compete img {
+    width: 16rem;
+    margin-top: 44px;
+    border-radius: 0.8rem;
+}
+
+.compete-left {
+    padding-left: 81px;
+    padding-top: 133px;
+}
+
+.compete-right {
+    padding-left: 189px;
+    padding-top: 133px;
+}
+
+.compete-item {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.compete-item img {
+    width: 11rem;
+}
+
+.compete-text-1 {
+    color: var(--white);
+    margin-top: 16px;
+    padding-left: 55px;
+}
+
+.compete-text-2 {
+    color: var(--white);
+    margin-top: 16px;
+    padding-left: 44px;
+}
+
+.compete-text-3 {
+    color: var(--white);
+    margin-top: 16px;
+    padding-left: 89px;
+}
+
+.compete-text-4 {
+    color: var(--white);
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .trending-item-1 {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .compete-mobile {
+        /* background-color: var(--purple); */
+        background-image: url(./assets/compete/compete-mobile-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .compete-mobile {
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+
+    .compete-mobile img {
+        width: 24rem;
+        border-radius: 0.8rem;
+    }
+
+    .compete-mobile h5 {
+        text-align: center;
+        color: var(--white);
+        margin-top: 1rem;
+    }
+}
+
+/* compete ends here */
+
+/* trending starts from here */
+
+
+.trending-item-1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.trending-item-1 img {
+    width: 34rem;
+    height: 27.5rem;
+    border-radius: 0.8rem;
+}
+
+.trending-item-2 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.trending-item-2 img {
+
+    width: 34rem;
+    height: 13rem;
+    border-radius: 0.8rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .trending-item-1 {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .trending-item-1 img {
+        width: 25.5rem;
+        height: 14.5rem;
+        border-radius: 0.8rem;
+    }
+
+    .trending-item-2 {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .trending-item-2 img {
+
+        width: 12rem;
+        height: 10rem;
+        border-radius: 0.8rem;
+    }
+}
+
+/* trending ends here */
+
+/* hightlights starts from here */
+
+.swiper-slide img {
+    display: block;
+    width: 16rem;
+    height: 10rem;
+    border-radius: .8rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .tournament h3 {
+        line-height: 35px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 10rem;
+        height: 6rem;
+        border-radius: .8rem;
+    }
+}
+
+/* hightlights ends here */
+
+/* background starts from here */
+
+.background {
+    height: auto;
+    background-image: url(./assets/logo/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 7rem;
+}
+
+.bg-text {
+    color: white;
+    font-size: 21px;
+    padding-top: 8rem;
+}
+
+.btn-bg {
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 10px 20px;
+    border-radius: 0.8rem;
+    color: var(--purple);
+    border: 1px solid var(--yellow);
+    font-weight: bold;
+}
+
+.btn-bg:hover {
+    background-color: var(--purple);
+    color: var(--yellow);
+}
+
+.btn-bg i {
+    margin-top: 5px;
+}
+
+
+
+/* background ends here */
+
+/* new chanllenges starts from here */
+
+.card-challenge img {
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+
+.btn-challenges {
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 2px 14px;
+    border-radius: 0.8rem;
+    color: var(--purple);
+    border: 1px solid var(--yellow);
+}
+
+.btn-challenges:hover {
+    background-color: #59555F;
+    color: var(--yellow);
+}
+
+/* .btn-challenges i{
+    margin-top: 5px;
+} */
+
+/* new chanllenges ends here */
+
+
+/* services starts from here */
+
+.services {
+    background-color: var(--purple);
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.services-text {
+    padding-top: 40px;
+    color: var(--white);
+}
+
+.services img {
+    width: 16rem;
+    padding-left: 30px;
+}
+
+.services-item-3 img {
+    width: 14.5rem;
+}
+
+.services-item-4 img {
+    width: 11.5rem;
+}
+
+.services-item-img-1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 28px;
+    margin-left: -1rem;
+    margin-top: -7px;
+}
+
+.services-item-img-1 img {
+    width: 14rem;
+}
+
+
+.services-item-img-2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 28px;
+    margin-left: -1rem;
+    margin-top: 10px;
+}
+
+.services-item-img-2 img {
+    width: 14rem;
+}
+
+.services-item-img-3 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 28px;
+    margin-left: -2rem;
+    margin-top: 10px;
+}
+
+.services-item-img-3 img {
+    width: 14rem;
+}
+
+
+.services-item-img-4 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 28px;
+    margin-left: -4rem;
+    margin-top: 10px;
+}
+
+.services-item-img-4 img {
+    width: 14rem;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .services img {
+        width: 10rem;
+        padding-left: 30px;
+    }
+
+    .services-item-4 img {
+        width: 8.5rem;
+    }
+
+    .services-item-img-1 img {
+        width: 11rem;
+    }
+
+    .services h5 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+/* services ends here */
+
+
+/* footer starts from here */
+
+.footer {
+    background-image: url(./assets/logo/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.footer img {
+    width: 3rem;
+}
+
+.footer-item-1 {
+    padding-left: 3rem;
+}
+
+.footer ul li a {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer ul li a:hover {
+    color: var(--grey);
+}
+
+.footer-icon {
+    margin-left: -17px;
+}
+
+.footer-item-1 h4 {
+    font-weight: 400;
+}
+
+/* footer ends here */
+
+
+/* breadcrumb starts from here */
+
+.swap-2 p {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .swap-2 p {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    .centered-2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -274%);
+    }
+
+    .swap-2 img {
+        display: block;
+        width: 100%;
+        height: 18rem !important;
+        margin-top: -1px;
+    }
+}
+
+.swap-2 img {
+    display: block;
+    width: 100%;
+    height: 25rem;
+    margin-top: -1px;
+}
+
+
+/* breadcrumb ends here */
+
+/* tournaments starts from here */
+
+  
+  .countdown-container {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: url('./assets/new/Counter-Strike.png') no-repeat center center / cover;
+  }
+  
+  .days-container,
+  .hours-container,
+  .minutes-container, 
+  .seconds-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+    border: 5px solid rgba(255,255,255,0.3);
+    width: 140px;
+    height: 140px;
+    border-radius: 99px;
+  }
+  
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 2.5em; 
+    margin: 10px 0;
+  }
+  
+  
+  .days-label,
+  .hours-label,
+  .minutes-label,
+  .seconds-label {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 800px) {
+    
+    .countdown-container {
+      max-width: 90%;
+    }
+    
+    .days-container,
+    .hours-container,
+    .minutes-container, 
+    .seconds-container {
+      font-size: 0.8em;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+
+.t-prizes svg{
+    margin-bottom: 6px;
+}
+
+.prize-card{
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+}
+
+/* tournamnets ends here */
+
+/* commnity starts from here */
+
+.c-management{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid var(--black); */
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+.c-management p{
+    padding-left: 25px;
+}
+/* community ends here */
+
+/* rewards starts from here */
+
+.credit{
+    text-align: center;
+    border: 1px solid var(--black);
+    padding: 0px 10px;
+    width: 98px;
+    border-radius: 14px
+}
+
+.digi-gift img{
+    border-radius: 10px;
+    width: 7rem;
+}
+
+.digi-gift h4{
+    font-size: 12px;
+}
+
+/* rewards ends here */
+
+/* my account starts from here */
+
+.account{
+    width: 40%;
+    height: auto;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-top: 3rem;
+    background-color: var(--purple);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .account {
+        width: 80%;
+    }
+
+}
+
+.form-account{
+    display: flex !important;
+    justify-content: center !important;
+    height: 35px;
+    margin-top: 4rem;
+}
+
+.form-inner{
+    padding: 20px 5px;
+}
+.btn-account{
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 600;
+}
+/* my account ends here */
+
+
+/* login form starts from here */
+
+.login-form{
+    width: 40%;
+    height: auto;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-top: 3rem;
+    background-color: var(--purple);
+    /* box-shadow: rgba(8, 20, 33, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .login-form {
+        width: 80%;
+    }
+
+}
+
+.register-form{
+    width: 89%;
+    height: auto;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-top: 3rem;
+    background-color: var(--purple);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.register-form h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.register-form h1{
+    font-size: 45px;
+   margin-bottom: 22px;
+}
+
+.register-right{
+    width: 89%;
+    height: auto;
+    /* border: 1px solid var(--black); */
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-top: 1.7rem;
+    /* background-color: var(--purple); */
+    
+}
+
+.register-right img{
+    width: 108%;
+    border-radius: 20px;
+}
+
+.register-text{
+    width: 89%;
+    height: auto;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-top: 3rem;
+    background-color: var(--purple);
+    
+}
+
+.register-text h3{
+    font-size: 25px;
+}
+
+.register-email img{
+    width: 50px;
+    margin-top: 12px;
+}
+
+.register-location img{
+    width: 57px;
+    margin-top: 38px;
+}
+
+.login-forgot{
+    text-decoration: none;
+    font-size: 12px;
+    float: right;
+}
+/* login form ends here */
+
+/* faq starts from here */
+
+.faq{
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 50px 20px;
+    margin-top: 3rem;
+    background-color: var(--purple);
+}
+
+
+.faq li{
+    color: var(--white);
+}
+/* faq ends here */
+
+/* game-challenge starts from here */
+
+.game-challenge img{
+    width: 24rem;
+    border-radius: 0.8rem;
+}
+
+.game-challenge h5{
+    font-size: 25px;
+}
+
+.game-challenge-btn{
+    text-decoration: none;
+    border: 1px solid var(--purple);
+    border-radius: 0.3rem;
+    padding: 5px 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--yellow);
+    background-color: var(--purple);
+}
+
+.game-challenge-btn:hover{
+    background-color: var(--yellow);
+    color: var(--purple);
+}
+
+.winner{
+    background-color: var(--purple2);
+    color: var(--white);
+    padding: 10px 17px;
+    border-radius: 0.3rem;
+}
+
+.game-challenge i{
+    color: var(--blue);
+}
+/* game-challenge ends here */
