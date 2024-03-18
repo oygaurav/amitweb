@@ -186,8 +186,8 @@
             <h3 data-aos="fade-up" data-aos-duration="3000" class="text-center text-white mt-4 mb-5">Let's Play Together
             </h3>
             <div data-aos="fade-up" data-aos-duration="3000" class="mb-3">
-                <label for="countrySelect" class="form-label text-white">Country</label>
-                <select id="countrySelect" class="form-select" name="altphoneCode">
+                <label for="dropdown1" class="form-label text-white">Country</label>
+                <select name="co" id="dropdown1" class="form-select" onchange="updateDropdown2()">
                     <option value="">Choose Country</option>
                     <option value="Kuwait">Kuwait</option>
                     <option value="Ng">Ng</option>
@@ -203,22 +203,13 @@
                 </select>
             </div>
             <div data-aos="fade-up" data-aos-duration="3000" class="mb-3">
-                <label for="operatorSelect" class="form-label text-white">Operator</label>
-                <select id="operatorSelect" class="form-select" name="altphoneCode">
-                    <option value="">Choose Operator</option>
-                    <option value="Ooredoo">Ooredoo</option>
-                    <option value="MTN">MTN</option>
-                    <option value="Etislat">Etislat</option>
-                    <option value="Safaricom">Safaricom</option>
-                    <option value="Vodacom">Vodacom</option>
-                    <option value="Zain">Zain</option>
-                    <option value="Mobily">Mobily</option>
-                    <option value="Zain">Zain</option>
-                    <option value="STC">STC</option>
-                    <option value="Virgin">Virgin</option>
-                    <option value="Jio">Jio</option>
+                <label for="dropdown2" class="form-label text-white">Operator</label>
+                <select name="op" id="dropdown2" onchange="updateDropdown3()" class="form-select" >
+                    
                 </select>
             </div>
+    
+
             <div data-aos="fade-up" data-aos-duration="3000" class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label text-white">Phone Number</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Phone No.">
@@ -338,50 +329,46 @@
         AOS.init();
     </script>
 
-<script>
-    document.getElementById("countrySelect").addEventListener("change", function() {
-        var countrySelect = document.getElementById("countrySelect");
-        var operatorSelect = document.getElementById("operatorSelect");
 
-        switch(countrySelect.value) {
-            case "Kuwait":
-                operatorSelect.value = "Ooredoo";
-                break;
-            case "Ng":
-                operatorSelect.value = "MTN";
-                break;
-            case "UAE":
-                operatorSelect.value = "Etislat";
-                break;
-            case "Kenya":
-                operatorSelect.value = "Safaricom";
-                break;
-            case "South Africa":
-                operatorSelect.value = "Vodacom";
-                break;
-            case "Jordan":
-                operatorSelect.value = "Zain";
-                break;
-            case "KSA":
-                operatorSelect.value = "Mobily";
-                break;
-            case "KSA":
-                operatorSelect.value = "Zain";
-                break;
-            case "KSA":
-                operatorSelect.value = "STC";
-                break;
-            case "KSA":
-                operatorSelect.value = "Virgin";
-                break;
-            case "India":
-                operatorSelect.value = "Jio";
-                break;
-            default:
-                operatorSelect.value = ""; 
-                break;
+<script>
+            function updateDropdown2() {
+            var dropdown1 = document.getElementById("dropdown1");
+            var dropdown2 = document.getElementById("dropdown2");
+
+       
+            dropdown2.innerHTML = "";
+
+      
+            var selectedOption = dropdown1.options[dropdown1.selectedIndex].value;
+
+            if (selectedOption === "Kuwait") {
+                dropdown2.add(new Option("Ooredoo"));
+            } else if (selectedOption === "Ng") {
+                dropdown2.add(new Option("MTN"));
+            }else if (selectedOption === "UAE") {
+                dropdown2.add(new Option("Etislat"));
+                
+            }else if (selectedOption === "Kenya") {
+                dropdown2.add(new Option("Safaricom"));
+            }else if (selectedOption === "South Africa") {
+                dropdown2.add(new Option("Vodacom"));
+                
+            }else if (selectedOption === "Jordan") {
+                dropdown2.add(new Option("Zain"));
+                
+            }else if (selectedOption === "KSA") {
+                dropdown2.add(new Option("Mobily"));
+                dropdown2.add(new Option("Zain"));
+                dropdown2.add(new Option("STC"));
+                dropdown2.add(new Option("Virgin"));
+            }else if (selectedOption === "India") {
+                dropdown2.add(new Option("Jio"));
+            }
+          
+			updateDropdown3();
         }
-    });
+
+        updateDropdown2();
 </script>
 </body>
 
