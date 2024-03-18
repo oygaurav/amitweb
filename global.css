@@ -674,7 +674,7 @@ h2 {
     text-align: center;
     color: white;
     padding-right: 28px;
-    margin-left: -4rem;
+    margin-left: -1rem;
     margin-top: 10px;
 }
 
@@ -695,7 +695,19 @@ h2 {
     }
 
     .services-item-img-1 img {
-        width: 11rem;
+        width: 12rem;
+    }
+
+    .services-item-img-2 img {
+        width: 12rem;
+    }
+
+    .services-item-img-3 img {
+        width: 12rem;
+    }
+
+    .services-item-img-4 img {
+        width: 12rem;
     }
 
     .services h5 {
