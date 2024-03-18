@@ -189,39 +189,37 @@
             <h4 data-aos="fade-up" data-aos-duration="3000" class="text-center text-white mt-4 mb-5">Enter your details number
                 to avail the service</h4>
                 <div data-aos="fade-up" data-aos-duration="3000" class="mb-3">
-
-                    <label for="exampleFormControlInput1" class="form-label text-white">Country</label>
-                    <select id="dwn_altphoneCode" class="form-select" name="altphoneCode">
-                        <option value="+91">Choose Country</option>
-                        <option value="+91">Kuwait</option>
-                        <option value="+93">Ng</option>
-                        <option value="+355">UAE</option>
-                        <option value="+213">Kenya</option>
-                        <option value="+213">South Africa</option>
-                        <option value="+213">Jordan</option>
-                        <option value="+213">KSA</option>
-                        <option value="+213">KSA</option>
-                        <option value="+213">KSA</option>
-                        <option value="+213">KSA</option>
-                        <option value="+213">India</option>
+                    <label for="countrySelect" class="form-label text-white">Country</label>
+                    <select id="countrySelect" class="form-select" name="altphoneCode">
+                        <option value="">Choose Country</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Ng">Ng</option>
+                        <option value="UAE">UAE</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="KSA">KSA</option>
+                        <option value="KSA">KSA</option>
+                        <option value="KSA">KSA</option>
+                        <option value="KSA">KSA</option>
+                        <option value="India">India</option>
                     </select>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="3000" class="mb-3">
-    
-                    <label for="exampleFormControlInput1" class="form-label text-white">Operator</label>
-                    <select id="dwn_altphoneCode" class="form-select" name="altphoneCode">
-                        <option value="+91">Choose Operator</option>
-                        <option value="+91">Ooredoo</option>
-                        <option value="+91">MTN</option>
-                        <option value="+91">Etislat</option>
-                        <option value="+91">Safaricom</option>
-                        <option value="+91">Vodacom</option>
-                        <option value="+91">Zain</option>
-                        <option value="+91">Mobily</option>
-                        <option value="+91">Zain</option>
-                        <option value="+91">STC</option>
-                        <option value="+91">Virgin</option>
-                        <option value="+91">Jio</option>
+                    <label for="operatorSelect" class="form-label text-white">Operator</label>
+                    <select id="operatorSelect" class="form-select" name="altphoneCode">
+                        <option value="">Choose Operator</option>
+                        <option value="Ooredoo">Ooredoo</option>
+                        <option value="MTN">MTN</option>
+                        <option value="Etislat">Etislat</option>
+                        <option value="Safaricom">Safaricom</option>
+                        <option value="Vodacom">Vodacom</option>
+                        <option value="Zain">Zain</option>
+                        <option value="Mobily">Mobily</option>
+                        <option value="Zain">Zain</option>
+                        <option value="STC">STC</option>
+                        <option value="Virgin">Virgin</option>
+                        <option value="Jio">Jio</option>
                     </select>
                 </div>
             <div data-aos="fade-up" data-aos-duration="3000" class="mb-3">
@@ -337,6 +335,52 @@
     <script>
         AOS.init();
     </script>
+
+<script>
+    document.getElementById("countrySelect").addEventListener("change", function() {
+        var countrySelect = document.getElementById("countrySelect");
+        var operatorSelect = document.getElementById("operatorSelect");
+
+        switch(countrySelect.value) {
+            case "Kuwait":
+                operatorSelect.value = "Ooredoo";
+                break;
+            case "Ng":
+                operatorSelect.value = "MTN";
+                break;
+            case "UAE":
+                operatorSelect.value = "Etislat";
+                break;
+            case "Kenya":
+                operatorSelect.value = "Safaricom";
+                break;
+            case "South Africa":
+                operatorSelect.value = "Vodacom";
+                break;
+            case "Jordan":
+                operatorSelect.value = "Zain";
+                break;
+            case "KSA":
+                operatorSelect.value = "Mobily";
+                break;
+            case "KSA":
+                operatorSelect.value = "Zain";
+                break;
+            case "KSA":
+                operatorSelect.value = "STC";
+                break;
+            case "KSA":
+                operatorSelect.value = "Virgin";
+                break;
+            case "India":
+                operatorSelect.value = "Jio";
+                break;
+            default:
+                operatorSelect.value = ""; 
+                break;
+        }
+    });
+</script>
 </body>
 
 </html>
