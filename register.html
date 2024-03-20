@@ -200,12 +200,13 @@
                     <option value="KSA">KSA</option>
                     <option value="KSA">KSA</option>
                     <option value="India">India</option>
+                    <option value="Other">Other</option>
                 </select>
             </div>
             <div data-aos="fade-up" data-aos-duration="3000" class="mb-3">
                 <label for="dropdown2" class="form-label text-white">Operator</label>
-                <select name="op" id="dropdown2" onchange="updateDropdown3()" class="form-select" >
-                    
+                <select name="op" id="dropdown2" onchange="updateDropdown3()" class="form-select">
+
                 </select>
             </div>
             <div data-aos="fade-up" data-aos-duration="3000" class="mb-3">
@@ -327,46 +328,48 @@
         AOS.init();
     </script>
 
-<script>
-    function updateDropdown2() {
-    var dropdown1 = document.getElementById("dropdown1");
-    var dropdown2 = document.getElementById("dropdown2");
+    <script>
+        function updateDropdown2() {
+            var dropdown1 = document.getElementById("dropdown1");
+            var dropdown2 = document.getElementById("dropdown2");
 
 
-    dropdown2.innerHTML = "";
+            dropdown2.innerHTML = "";
 
 
-    var selectedOption = dropdown1.options[dropdown1.selectedIndex].value;
+            var selectedOption = dropdown1.options[dropdown1.selectedIndex].value;
 
-    if (selectedOption === "Kuwait") {
-        dropdown2.add(new Option("Ooredoo"));
-    } else if (selectedOption === "Ng") {
-        dropdown2.add(new Option("MTN"));
-    }else if (selectedOption === "UAE") {
-        dropdown2.add(new Option("Etislat"));
-        
-    }else if (selectedOption === "Kenya") {
-        dropdown2.add(new Option("Safaricom"));
-    }else if (selectedOption === "South Africa") {
-        dropdown2.add(new Option("Vodacom"));
-        
-    }else if (selectedOption === "Jordan") {
-        dropdown2.add(new Option("Zain"));
-        
-    }else if (selectedOption === "KSA") {
-        dropdown2.add(new Option("Mobily"));
-        dropdown2.add(new Option("Zain"));
-        dropdown2.add(new Option("STC"));
-        dropdown2.add(new Option("Virgin"));
-    }else if (selectedOption === "India") {
-        dropdown2.add(new Option("Jio"));
-    }
-  
-    updateDropdown3();
-}
+            if (selectedOption === "Kuwait") {
+                dropdown2.add(new Option("Ooredoo"));
+            } else if (selectedOption === "Ng") {
+                dropdown2.add(new Option("MTN"));
+            } else if (selectedOption === "UAE") {
+                dropdown2.add(new Option("Etislat"));
 
-updateDropdown2();
-</script>
+            } else if (selectedOption === "Kenya") {
+                dropdown2.add(new Option("Safaricom"));
+            } else if (selectedOption === "South Africa") {
+                dropdown2.add(new Option("Vodacom"));
+
+            } else if (selectedOption === "Jordan") {
+                dropdown2.add(new Option("Zain"));
+
+            } else if (selectedOption === "KSA") {
+                dropdown2.add(new Option("Mobily"));
+                dropdown2.add(new Option("Zain"));
+                dropdown2.add(new Option("STC"));
+                dropdown2.add(new Option("Virgin"));
+            } else if (selectedOption === "India") {
+                dropdown2.add(new Option("Jio"));
+            } else if (selectedOption === "Other") {
+                dropdown2.add(new Option("Other"));
+            }
+
+            updateDropdown3();
+        }
+
+        updateDropdown2();
+    </script>
 </body>
 
 </html>
