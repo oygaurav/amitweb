@@ -743,6 +743,13 @@ h2 {
     padding-left: 3rem;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .footer-item-1 {
+        padding-left: 0.7rem;
+    }
+}
+
 .footer ul li a {
     font-size: 15px;
     font-weight: 400;
@@ -1009,7 +1016,7 @@ h2 {
 }
 
 .register-right img{
-    width: 108%;
+    width: 107%;
     border-radius: 20px;
 }
 
@@ -1025,7 +1032,7 @@ h2 {
 }
 
 .register-text h3{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .register-email img{
@@ -1101,3 +1108,46 @@ h2 {
     color: var(--blue);
 }
 /* game-challenge ends here */
+
+/* how to play starts from here */
+
+.play img{
+    border-radius: 50%;
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+}
+
+.play p{
+    display: flex;
+    justify-content: center;
+    padding-right: 35px;
+}
+
+.play-item {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 28px;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.centered-play {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .play img{
+        border-radius: 50%;
+        width: 13rem;
+        position: relative;
+        left: 21%;
+    }
+
+}
+/* how to play ends here */
