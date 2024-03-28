@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Click & Win</title>
+    <link rel="icon" type="images/x-icon" href="./assets/logo/logo2.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- navbar starts from here -->
+    <section class="bg">
+        <div class="container-fluid  p-0 d-md-block nav-top">
+            <header class="d-flex flex-wrap justify-content-center shadow-5-strong">
+                <a href="./challenges.html"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-4 heading-6 text-white">
+                        <h6 class="text-white heading-6 animate__animated animate__backInLeft mt-2">Rewards !!!</h6>
+                    </span>
+                </a>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#"
+                            class="nav-link text-white animate__animated animate__backInRight"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link text-white animate__animated animate__backInRight"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link text-white animate__animated animate__backInRight"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link text-white animate__animated animate__backInRight"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item heading-6"><a href="mailto:support@cliqnget.com"
+                            class="nav-link text-white animate__animated animate__backInRight"><i
+                                class="fa-solid fa-envelope"></i> support@cliqnget.com</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <nav class="navbar navbar-expand-lg rounded d-md-block mt-3 nav-top" aria-label="Thirteenth navbar example">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-start">
+                        <li class="nav-item heading-4">
+                            <a class="nav-link active text-white animate__animated animate__bounce" aria-current="page"
+                                href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item heading-4">
+                            <a class="nav-link text-white animate__animated animate__bounce"
+                                href="./challenges.html">Challenges</a>
+                        </li>
+                        <li class="nav-item heading-4">
+                            <a class="nav-link text-white animate__animated animate__bounce"
+                                href="./tournaments.html">Tournaments</a>
+                        </li>
+                        <li class="nav-item  heading-4">
+                            <a class="nav-link text-white animate__animated animate__bounce"
+                                href="./rewards.html">Rewards</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand col-lg-3 me-0 justify-content-lg-center" href="./index.html"><img
+                            src="./assets/logo/logo3.png" alt="" /></a>
+
+                    <ul class="navbar-nav col-lg-3 justify-content-lg-end">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white heading-4 animate__animated animate__bounce"
+                                aria-current="page" href="./contact-us.html">
+                                Contact&nbsp;&nbsp;Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white heading-4 animate__animated animate__bounce"
+                                aria-current="page" href="./myaccount.html">
+                                MyAccount</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white heading-4 animate__animated animate__bounce"
+                                aria-current="page" href="./faq.html">
+                                Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white heading-4 animate__animated animate__bounce"
+                                aria-current="page" href="./login.html">
+                                Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <nav class="navbar navbar-expand-lg bg-nav-mobile d-md-none" aria-label="Eleventh navbar example">
+        <div class="container-fluid">
+            <a data-aos="fade-right" class="navbar-brand col-lg-3" href="./index.html"><img
+                    src="./assets/logo/logo3.png" alt="" /></a>
+            <button data-aos="fade-left" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link clr-primary heading-4" aria-current="page" href="./index.html">HOME</a>
+                    </li>
+                    <li data-aos="flip-up" class="nav-item">
+                        <a class="nav-link clr-primary heading-4" href="./challenges.html">Challenges</a>
+                    </li>
+                    <li data-aos="flip-up" class="nav-item">
+                        <a class="nav-link clr-primary heading-4" href="./tournaments.html">Tournaments</a>
+                    </li>
+                    <li data-aos="flip-up" class="nav-item">
+                        <a class="nav-link clr-primary heading-4" href="./rewards.html">Rewards</a>
+                    </li>
+                    <li data-aos="flip-up" class="nav-item">
+                        <a class="nav-link clr-primary heading-4" href="./contact-us.html">Contact Us</a>
+                    </li>
+                    <li data-aos="flip-up" class="nav-item">
+                        <a class="nav-link clr-primary heading-4" href="./myaccount.html">My Account</a>
+                    </li>
+                    <li data-aos="flip-up" class="nav-item">
+                        <a class="nav-link clr-primary heading-4" href="./faq.html">Faq</a>
+                    </li>
+                    <li data-aos="flip-up" class="nav-item">
+                        <a class="nav-link clr-primary heading-4" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar ends here -->
+
+    <!-- breadcrumb starts from here -->
+
+    <section>
+        <div class="container-fluid padding-bottom p-0">
+            <div class="swap-2">
+                <img src="./assets/logo/bg5.png" alt="">
+                <div class="animate__animated animate__bounceIn featured-item">
+                    <p class="text-white centered-2">T & C</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- breadcrumb ends here -->
+
+    <!-- faq starts form here -->
+
+    <section>
+        <div class="container faq">
+            <ol>
+                <li data-aos="fade-up" data-aos-duration="3000"><strong>The purpose of the Site</strong></li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000">The purpose of the Site (www.esports.in) is
+                        to enable You to compete in Tournaments,
+                        Leagues and other competitive formats in skill-based competitive computer games, such as e.g.
+                        League of Legends, CS:GO or mobile games, such as e.g. PUBG Mobile, Freefire. Users (and only
+                        Users) will be able to participate in Free Competitions and win prizes such as merchandise or
+                        gaming products e.g. peripherals, clothing and in-game items or Prize Pool (minus applicable tax
+                        and commissions where applicable).</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Click & Win Match and Tournament services (henceforth
+                        “Services”) are categorized as “Games of skill” and the outcome of any Match or Tournament
+                        played is solely the result of skill, not chance.</li>
+                </ul>
+
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Eligibility</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">In order to use the Services, You need to register and maintain a User Account on the Site and
+                        You must :</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">be a natural person</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" >be at least 18 years of age</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" >submit Your Mobile Number, Email Address, and</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" >comply with these Terms at all times.</li>
+                    </ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Officers, directors and agents of Click & Win and its affiliates are not eligible to
+                        participate in any Competitions, other than for test and product development purposes.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" >Click & Win may at any time require You to provide proof of eligibility to allow You access
+                        to the Site. Failure to provide an evidence of identification and/or eligibility satisfactory to
+                        Click & Win, in its sole and absolute discretion, shall result in the suspension and/or
+                        termination of such User Account.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Fees</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">All tournament participations are Free to Register subject to user validation by Click & Win.
+                    </li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" >Required Information</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Upon registration, You are required to provide the following information :</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">an alias that will be the username,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">a password,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Your e-mail address,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">birthdate or a confirmation that You are 18 years or older</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">full name,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">permanent residential address,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">phone number,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">game related information, such as Game Accounts/nicknames, and</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Social media related information</li>
+                    </ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">The information provided must be true, accurate, current and complete, as requested. If PlayMe
+                        eSports suspects that You are registering a User Account with purposely incorrect information,
+                        Click & Win reserves the right to terminate Your User Account. Click & Win also reserves
+                        the right, in its sole discretion, to change and/or suspend/terminate offensive and/or
+                        inappropriate usernames.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">User Accounts</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You are solely responsible for all obligations and compliance with these Terms and are entitled
+                        to all benefits accruing thereto. You may not allow any other person to access Your User
+                        Account, access the Site, accept any Prizes, or participate in any Tournament using Your User
+                        Account. Your User Account is not transferable to another person. All activities undertaken
+                        under Your User Account will be deemed to have been done by You.
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You are only permitted to register one active User Account on the Site. Click & Win reserves
+                        the right but is not obliged to monitor any effort to establish multiple User Accounts. In the
+                        event it is discovered that You have opened more than one User Account, all Your User Accounts
+                        may be terminated without any notice. Click & Win reserves the right to deny access to
+                        anyone, including, but not limited to, those Users who use proxy servers and/or IP addresses
+                        residing in certain geographical areas.
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">In consideration of the use of the Site and Your User Account, You agree to :</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">provide accurate, current and complete information about Yourself as may be prompted by any
+                            registration forms on the Site (henceforth “Registration Data”);</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">maintain the security of the password and identification;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">maintain and promptly update the Registration Data, and any other information, to keep it
+                            accurate and complete; and</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">be fully responsible for all use of Your User Account and for any actions that take place
+                            using Your User Account. Knowingly submitting incomplete or inaccurate information or
+                            failing to update and maintain complete and accurate information, may result in immediate
+                            termination of Your User Account.</li>
+                    </ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Deposits</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Any attempt to defraud the Site through the use of credit cards or other methods of payment,
+                            regardless of the outcome, or any failure by You to honor legitimate charges or requests for
+                            payment, or confirmation of deposits, will result in immediate termination of Your User
+                            Account, forfeiture of any Prizes, and active pursuit of civil litigation and/or referral
+                            for criminal prosecution.</li>
+                    </ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Closing the User Account</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You can close Your User Account at any time, by contacting the support directly on
+                            support@cliqnget.com</li>
+                    </ul>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Malfunctions, Fraud and Unauthorized Access</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You agree, without limitation, that Click & Win is not responsible for technical, hardware or
+                        software malfunctions, lost or unavailable network connections, disconnects from the game play
+                        on the Platform, or any incorrect or inaccurate results that may be posted on or in relation to
+                        a Game. You also agree that Click & Win is not responsible for any damage, loss, or injury
+                        resulting from hacking, tampering, or other unauthorized access or use of the Site or Your User
+                        Account.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You may not :</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">gain unauthorized access to the Site’s systems or any other’s User Account other than Your
+                            own, interfere with the communications, procedures or performance of the Site or
+                            deliberately damage or undermine the Site;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">affect the outcome of Your online game play by means of or with the assistance of macros,
+                            bots, automated programs, cheating software, screen analysis utilities, player collusion,
+                            any type of modifications or otherwise commit fraud in relation to the Site;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">alter the human skill component of any game played on the platform;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">intentionally play poorly below Your skill level in order to be matched with a less skilled
+                            User; or</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">participate in any Match, Tournament or Game offered on the Site by means of automatic,
+                            macro, programmed bots, or similar methods, or to otherwise commit fraud with regard to the
+                            Site. Any attempt to do so is a violation of both civil and criminal laws and will result
+                            not only in the termination of Your User Account and forfeiture of all Prizes, bonuses and
+                            incentives to which You would otherwise be entitled to, but potentially lead to civil and/or
+                            criminal prosecution. Click & Win, in its sole discretion, reserves the right to
+                            terminate any User’s User Account who is suspected of tampering with their game results for
+                            the Match or Tournament entered, or who otherwise violates these Terms and to seek legal
+                            enforcement to the greatest extent possible.</li>
+                    </ul>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Matches and Matchmaking</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You agree that Click & Win is appointed as an agent to communicate issued Match requests, the
+                        receipt of such requests between You and other Users, and the results of a Match. Click & Win
+                        does not in any way participate in any Match.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">By accepting a Match request (participating in a Matchmaking event), You expressly confirm that
+                        You have read and understood the nature of the Match and the terms under which You will
+                        participate.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Once You have joined a Match through Matchmaking You agree to play the Match to completion with
+                        any matched teammates or opponents. Click & Win may determine, in its absolute discretion,
+                        when the Site is open for issuing or participating new Matches.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Tournaments</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">The Tournaments are governed by these Terms in combination with the terms and conditions
+                        applicable for each Tournament. If the terms and conditions applicable for each Tournament are
+                        in conflict with these Terms, these Terms shall prevail.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">By joining a Tournament and confirming that You will participate, You expressly confirm that You
+                        have read and understood the nature of the Tournament and the terms under which You will
+                        participate.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Prizes and Currency</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">The Prizes are awarded to You in their entirety, and all national, provincial, state, and local
+                        taxes due in connection with any Prizes awarded, are Your sole liability and responsibility.
+                        Click & Win reserves the right to retain a predetermined portion of up to 10% of the Prize as
+                        commission in all Competitions and Tournaments.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">The outcome of the Matches and Tournaments offered are directly related to the number of
+                        participants and the skill level of each participant. Click & Win does not comment and makes
+                        no representations about Your or any other User’s chances of winning or losing.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">All monetary Prizes are directly deposited winner’s Bank Account. You may be charged a service
+                        fee for such currency conversion amounting a percentage set by the given Payment Providers. The
+                        conversion rate used is not under the control of Click & Win.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">The results and Prizes of each Match or Tournament will be determined with actual game and
+                        server data as well as by Click & Win and its Administrators. Such determinations are final
+                        and cannot be appealed. By registering and/or participating in any Match or Tournament, You
+                        agree to be bound by these determinations.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Promotional Activities</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">When registering for a User Account, You agree that Click & Win may display Your username,
+                        gameplay data and statistics, tournament records and any other information with regard to Your
+                        gaming activity on the Site.You agree to allow Click & Win to print, publish, broadcast and
+                        use, worldwide, in any media and at any time, Your username, gameplay data and statistics,
+                        tournament records and any other information with regard to Your gaming activity on the Site,
+                        for promotional, marketing or related purposes without additional compensation.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">If You submit or transmit audio, video, or text materials to the Site, including, but not
+                        limited to, comments, question, suggestions, drawings, or computer programs (collectively
+                        “Submissions”), You grant Click & Win and its affiliates, its partners and distributors, a
+                        non-exclusive, worldwide, royalty-free, fully sub-licensable license, to use, distribute, edit,
+                        display, archive, publish, sublicense, perform, reproduce, make available, transmit, broadcast,
+                        sell, translate and create derivative works of those Submissions, in any form, media, or
+                        technology, for the purpose of developing and marketing game products, Matches and Tournaments.
+                        You hereby waive, to the fullest extent possible under applicable law, any moral rights You may
+                        have to such Submissions.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You represent and warrant that You have all rights necessary to grant Click & Win and its
+                        affiliates the license above and that none of Your Submissions are defamatory, violate any
+                        rights of third parties, including, without limitation, any intellectual property rights, or
+                        violate applicable laws.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Intellectual Property Rights</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">By registering for a User Account and participating in any Match or Tournament offered on the
+                        Site, or using the Services, You acknowledge that all content included in the Services,
+                        including but not limited to, all Site design, text, graphics, photos, audio, video, the
+                        selection and arrangement thereof, and all software that forms part of the Services
+                        (collectively the “Content”) is owned or licensed by Click & Win and/or its licensors.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You agree to not modify, publish, participate in the transfer or sale of, create derivative
+                        works from, or in any way exploit the Content. Click & Win neither warrants nor represents
+                        that Your use of the Content will not infringe rights of third parties. While Click & Win
+                        uses reasonable efforts to include accurate and up-to-date information, Click & Win makes no
+                        warranties or representations as to the accuracy or completeness of any Content and assumes no
+                        liability or responsibility for any errors or omissions in the Content.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">The trademarks, logos, and service marks (collectively the “Trademarks”) displayed and forming
+                        part of the Content, including the names of all Games, Matches and Tournaments, are registered
+                        and unregistered Trademarks of Click & Win and/or others. Nothing contained on the Site
+                        should be construed as granting, by implication or otherwise, any license or right to use any of
+                        the Trademarks displayed on the Site without the prior written permission of Click & Win or
+                        such third party that owns the Trademark. Your misuse of any Trademark or any other Content,
+                        except as provided in these Terms and applicable copyright, trademark, patent, or other
+                        intellectual property restrictions, is strictly prohibited.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Click & Win will enforce its intellectual property rights to the fullest extent of the law,
+                        including but not limited to, the active pursuit of civil litigation and referral for criminal
+                        prosecution where appropriate.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Complaints</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">In case of any complaints on the Site or the Services, such complaints shall be directed to
+                        Click & Win by;
+                        E-mail: support@cliqnget.com</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">In order for Click & Win to deal with Your complaint quickly, the complaint must contain
+                        clear information about Your identity as well as all relevant details giving rise to the
+                        complaint. Click & Win will use its best efforts to promptly resolve a reported matter and
+                        reach an amicable settlement.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Any claim You might have regarding any transaction must be made within six (6) months after the
+                        transaction and/or payment took place/should have taken place; otherwise Click & Win will not
+                        consider the claim. Once a claim is received, Click & Win will review any queried or disputed
+                        transactions and inform You about the outcome. Click & Win’s decision is final.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Anti-spam Policy</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Click & Win prohibits any activity commonly referred to as “Spam”, which is defined as :</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">electronic mail messages addressed to a recipient with whom the initiator does not have an
+                            existing business or personal relationship or is not sent at the request of, or with the
+                            express consent of, the recipient;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">messages posted to message boards or chats that are off-topic (unrelated to the topic of
+                            discussion), cross-posted to unrelated message boards or discussion threads, or posted in
+                            excessive volume;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">solicitations posted on chat rooms, or to groups or individuals via Internet Relay Chat or
+                            Instant Messaging system (such as Skype, Facebook Chat and Twitter);</li>
+                    </ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">If You are reported and the claims of Spam are validated by Click & Win, Click & Win may
+                        undertake, at its sole discretion and with or without prior notice, the following enforcement
+                        actions :</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Account suspension: Upon receipt of a credible and validated complaint, Click & Win may
+                            elect to immediately suspend Your User Account implicated in the abuse. Suspension serves as
+                            a “final” warning and will prevent You from continuing the abusive spamming behavior. PlayMe
+                            eSports will evaluate each validated abuse incident on a case-by-case basis and impose
+                            termination or suspension at its sole discretion and may void any associated Prizes. PlayMe
+                            eSports reserves the right to lift Your suspension at any time, at its sole discretion.</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Account termination: Upon receipt of a credible and validated complaint, Click & Win may
+                            immediately terminate Your User Account implicated in the abuse and may void any associated
+                            Prizes.</li>
+                    </ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">If You wish to report a violation of Click & Win’s Anti-Spam Policy, please forward all
+                        evidence of abuse to support@cliqnget.com</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Rules of Conduct</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Click & Win reserves the right to remove any User generated content and temporarily or
+                        permanently ban Users who violate these rules of conduct (henceforth “Rules of Conduct”), or who
+                        in any way;</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">abuse the community purpose of the chat areas,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">post obscene, lewd, slanderous, pornographic, abusive, violent, insulting, indecent,
+                            threatening and harassing language of any kind,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">impersonate other Users,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">post opinions or comments that attack individuals, companies or products,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">advertise or promote other companies, URLs, and any other kind of advertisement or
+                            promotion,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">share personal information (name, phone number, home address, password),</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">post copyrighted or trademarked material,</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">use any advanced fonts, Java, tables, HTML, or other programming scripts or commands,</li>
+                    </ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Information disclosed on the Site’s chat rooms, direct messages, message boards by comments or
+                        other electronic messages becomes the property of Click & Win and may be publicly disclosed.
+                        Click & Win is not responsible for any information that You choose to disclose.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Breach of Terms</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Click & Win reserves the right to take immediate action in the event that You are believed of
+                        failing to observe the terms of the Rules of Conduct or violating these Terms. Such actions
+                        include but are not limited to, suspending or terminating Your User Account, or the Credits,
+                        void Your scores, change Your feedback, seize funds in Your User Account to repay contestants
+                        who You have cheated against and/or commence legal proceedings against You.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Click & Win reserves the right to suspend or terminate the User Account of any User who is in
+                        violation or who Click & Win suspect may be or will be violating these Terms. If such
+                        violations occur and a User Account is terminated, Click & Win reserves the right to
+                        determine how such a User’s User Account balance will be distributed.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Click & Win may cooperate with legal authorities and third parties in the investigation of
+                        any suspected or alleged crime or civil wrongdoing. Click & Win reserves the right, in its
+                        sole discretion, to take any or all of the steps described above if it determines, acting
+                        reasonably, that You :</li>
+                    <ul >
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">have breached any term of these Terms;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">are participating in any attempt to defraud Click & Win or the Site through the use of
+                            credit cards or other methods of payment, regardless of the outcome;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">have failed to honor legitimate charges or requests for payment, or has ‘charged back’ or
+                            denied any of the purchases or deposits that You made to Your User Account;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">are participating in any attempt to cheat another User through collusion or other
+                            techniques, regardless of the outcome; or</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">have become bankrupt or subject to analogous proceedings anywhere in the world.</li>
+                    </ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">For breaches of the Terms (including the Rules of Conduct) that are deemed by Click & Win, in
+                        its sole discretion, to be unintentional or less serious, first time offenders may receive an
+                        initial warning and may have their User Account suspended at the discretion of Click & Win.
+                        Repeated offences will be deemed to be intentionally violating the Terms. If You are suspected
+                        of having violated the Rules of Conduct, Click & Win reserves the right to suspend Your User
+                        Account, including any access to the Site, or freeze the Credits and any account balance or
+                        withdrawals pending for up to six months while an investigation occurs.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Click & Win reserves the right to terminate Your User Account, limit or prohibit Your
+                        participation in any Match, Game or Tournament. If applicable, all charged monies (deposits),
+                        less fees and withdrawals, will be returned to You. All Prizes (if any) may be voided at the
+                        sole discretion of Click & Win. Any person whose access has been suspended or terminated may
+                        not re-register for, or re-access, the Site without Click & Win’s prior written consent.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Local Laws</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You are subject to all laws of the province, state, and/or country in which You reside and from
+                        which You access the Services and is solely responsible for obeying the laws of such
+                        jurisdiction. You agree that Click & Win and its affiliates cannot be held liable if
+                        applicable law restricts or prohibits Your participation or use of the Service. Click & Win
+                        and its affiliates make no representations or warranties, implicit or explicit, as to Your legal
+                        right to participate in any Match, Tournament or Game offered on the Site nor shall any person
+                        affiliated, or claiming affiliation, with Click & Win and its affiliates have authority to
+                        make any such representations or warranties. Click & Win and its affiliates reserve the right
+                        to monitor the location from which You access the Site and to block access from any jurisdiction
+                        in which participation is illegal or restricted.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">No Waiver</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">The failure of Click & Win to enforce at any time any of the provisions of these Terms, or
+                        the failure to require at any time performance by You of any of the provisions of these Terms,
+                        shall in no way be construed to be a present or future waiver of such provisions, nor in any way
+                        affect the right of Click & Win to enforce each and every such provision thereafter. The
+                        express waiver by Click & Win of any provision, condition or requirement of these Terms shall
+                        not constitute a waiver of any future obligation to comply with such provision, condition or
+                        requirement.</li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Limitation of Liability</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">You agree that Click & Win and its affiliates will not be liable for any direct, indirect,
+                        incidental, special, consequential or exemplary damages, including but not limited to, damages
+                        for loss of profits, goodwill, use, data or other intangible losses (even if Click & Win and
+                        its affiliates have been advised of the possibility of such damages), resulting from :</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">the use or inability to use the Services;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">the cost of getting substitute goods and services resulting from any products, data,
+                            information or services purchased or obtained or messages received, or transactions entered
+                            into through or from the Services;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">unauthorized access to or alteration of transmissions or data;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">statements or conduct of anyone in connection with the Services; or</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">any other matter relating to the Services. If, notwithstanding the other provisions of this
+                            Terms, Click & Win and its affiliates are found to be liable for any damage or loss which
+                            arise out of or is any way connected to Your use of the Services, liability of PlayMe
+                            eSports and its affiliates shall be limited to the total of any funds lost by You by
+                            participating in any Match, Tournament, Game or any fees with respect to any Service or
+                            feature of the Services paid in the six months prior to the date of the initial claim made
+                            against Click & Win and its affiliates, but shall in no circumstances exceed USD 100.
+                        </li>
+                    </ul>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Indemnification</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">By registering and/or participating in any Services offered on the Site, You agree to indemnify,
+                        defend, and hold harmless Click & Win, its subsidiaries, affiliates, and the directors,
+                        officers, employees, shareholders, vendors, partners, contractors, agents, licensors or other
+                        representatives of each of them and all their successors and assigns (collectively, the
+                        “indemnitees”) in respect of all claims, costs (including reasonable legal fees and costs),
+                        damages, liabilities and expenses or obligations of any kind, arising out of or in connection
+                        with Your use or misuse of the Services (including without limitation use of Your User Account,
+                        whether or not authorized by You). Click & Win retains the right to assume the exclusive
+                        defense and control of any claim supporting indemnification, and in such cases, You agree to
+                        cooperate with Click & Win to defend any such claim. You will not settle any claim covered by
+                        this section and the disclaimer of warranties without Click & Win’s prior written approval.
+                    </li>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Notices</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Unless otherwise agreed between the parties, any notice, request, consent and other communication to be given by a party under these Terms (henceforth “Notice”) shall be in the English language and deemed to be valid and effective if personally served on the other party or sent by registered prepaid airmail to the other party’s known address.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Any notice or other communication shall be deemed to have been served :</li>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">if delivered by hand, when left at the address referred to above;</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">if sent by registered letter, the second day after it is sent; or</li>
+                        <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">if sent by email, on the date sent if receipt of the email is confirmed by the recipient.</li>
+                    </ul>
+                </ul>
+                <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Governing Law and Disputes</li>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">These Terms will be governed by and construed in accordance with the national laws and provisions of the country of India. You hereby consent to the exclusive jurisdiction of and venue in Indian courts, for all disputes arising out of or relating to the Services. Notwithstanding any other provisions of these Terms, Click & Win may seek injunctive or other equitable relief from any court of competent jurisdiction. You agree that any dispute that cannot be resolved between the parties shall be resolved individually, without resort to any form of class action.</li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3">Click & Win makes no representation that the Site is operated in accordance with the laws or regulations of, or governed by, other nations.
+                        This site uses cookies. Find out more about cookies and how you can refuse them.</li>
+                </ul>
+            </ol>
+        </div>
+    </section>
+
+
+
+
+    <!-- faq ends here -->
+
+
+    <!-- footer starts from here -->
+    <div class="container-fluid footer m-tb90">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div data-aos="fade-up" class="col mb-3 footer-item-1">
+                <a href="./index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <img src="./assets/logo/logo3.png" alt="">
+                </a>
+                <h4 class="clr-primary">Worlds largest esports gaming platform, where you can enjoy unlimited games for
+                    fun</h4>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3 text-white">
+                <h5 data-aos="fade-up" class="text-white">Products</h5>
+                <ul class="nav flex-column">
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./index.html"
+                            class="nav-link p-0 clr-primary">Home</a></li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./challenges.html"
+                            class="nav-link p-0 clr-primary">Challenges</a></li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./tournaments.html"
+                            class="nav-link p-0 clr-primary">Tournaments</a></li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./highlights.html"
+                            class="nav-link p-0 clr-primary">Highlights</a></li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./challenges.html"
+                            class="nav-link p-0 clr-primary">Trending
+                            Games</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 data-aos="fade-up" class="text-white">Need Help ?</h5>
+                <ul class="nav flex-column">
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./rewards.html"
+                            class="nav-link p-0 clr-primary">Rewards</a></li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./contact-us.html"
+                            class="nav-link p-0 clr-primary">Contact Us</a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./faq.html"
+                            class="nav-link p-0 clr-primary">Faq</a></li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./myaccount.html"
+                            class="nav-link p-0 clr-primary">My Account</a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item mb-2"><a href="./terms.html"
+                            class="nav-link p-0 clr-primary">T&C</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 data-aos="fade-up" class="text-white">Follow Us</h5>
+                <ul class="nav nav-pills footer-icon">
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item"><a href="#"
+                            class="nav-link clr-primary"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item"><a href="#"
+                            class="nav-link clr-primary"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item"><a href="#"
+                            class="nav-link clr-primary"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="3000" class="mt-3" class="nav-item"><a href="#"
+                            class="nav-link clr-primary"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                        class="nav-item heading-6 "><a href="mailto:support@cliqnget.com"
+                            class="nav-link clr-primary"><i class="fa-solid fa-envelope"></i> support@cliqnget.com</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </footer>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 px-4 my-4 border-top">
+            <p class="text-white">© 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a href="#" class="nav-link text-white"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="ms-3"><a href="#" class="nav-link text-white"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li class="ms-3"><a href="#" class="nav-link text-white"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- footer ends here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/fa4699cbe9.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
