@@ -1090,7 +1090,13 @@ h2 {
         width: 20rem;
     }
 
+    .faq-item{
+        padding: 0px 20px;
+    }
+
 }
+
+
 /* faq ends here */
 
 /* game-challenge starts from here */
