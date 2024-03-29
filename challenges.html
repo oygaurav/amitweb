@@ -949,6 +949,36 @@
     <script>
         AOS.init();
     </script>
+
+<script>
+    // prevent right click
+    document.oncontextmenu = () => {
+        return false
+    }
+
+
+    document.oncontextmenu = () => {
+        // prevent F12
+        if (e.key == "F12") {
+            return false
+        }
+
+         // prevent page source
+         if (e.ctrlKey && e.key == "u") {
+            return false
+        }
+
+         // prevent copy
+         if (e.ctrlKey && e.key == "c") {
+            return false
+        }
+
+         // prevent copy
+         if (e.ctrlKey && e.key == "v") {
+            return false
+        }
+    }
+</script>
 </body>
 
 </html>
