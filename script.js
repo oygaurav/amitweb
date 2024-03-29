@@ -133,9 +133,9 @@ tabs.on('click', function(e) {
 
 // prevent right click
 
-document.addEventListener
-("contextmenu", function(e)
-{
-  e.preventDefault()
-},false)
+// document.addEventListener
+// ("contextmenu", function(e)
+// {
+//   e.preventDefault()
+// },false)
   
