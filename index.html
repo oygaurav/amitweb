@@ -1218,8 +1218,8 @@
     //disable F12 Key and Ctrl + shift + I combination
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $(document).keydown(function(event) {
+        $(document).ready(function () {
+            $(document).keydown(function (event) {
                 var message = 'Content is protected\nYou cannot view the Dev Tools.';
                 if (event.keyCode == 123) { // Prevent F12
                     alert(message);
@@ -1231,7 +1231,23 @@
             });
         });
     </script>
-    
+
+    <script>
+        // Add the event listener
+        document.addEventListener("keydown", (event) => {
+            if (event.keyCode == 83 && (navigator.platform.match("Mac") ? event.metaKey : event.ctrlKey)) {
+                event.preventDefault();
+                doSomethingElse();
+            }
+        }, false);
+
+        // Do something other than the default action
+        const doSomethingElse = () => {
+            console.log('Prevented the default event for the Ctrl+S key combination');
+            console.log('You can now do something else with the key combo.');
+        }
+    </script>
+
 </body>
 
 
