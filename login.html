@@ -383,6 +383,58 @@
 
 
 </script>
+
+<script type='text/javascript'>
+    if (typeof document.onselectstart != 'undefined') {
+        document.onselectstart = new Function('return false');
+    }
+    else {
+        document.onmousedown = new Function('return false');
+        document.onmouseup = new Function('return true');
+    }
+</script>
+
+// disable viewing page source
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script>
+    document.onkeydown = function (e) {
+        var message = 'Content is protected\nYou cannot view the page source.';
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+                e.keyCode === 86 ||
+                e.keyCode === 85 ||
+                e.keyCode === 117)) {
+            alert(message);
+            return false;
+        } else {
+            return true;
+        }
+    };
+    $(document).keypress('u', function (e) {
+        if (e.ctrlKey) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    });
+</script>
+
+//disable F12 Key and Ctrl + shift + I combination
+<script src=”http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js”></script>
+<script>
+
+    $(document).keydown(function (event) {
+        var message = 'Content is protected\nYou cannot view the Dev Tools.';
+        if (event.keyCode == 123) { // Prevent F12
+            alert(message);
+            return false;
+        } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I
+            alert(message);
+            return false;
+        }
+    });
+</script>
 </body>
 
 </html>
