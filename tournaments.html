@@ -689,18 +689,19 @@
 </script>
 
 //disable F12 Key and Ctrl + shift + I combination
-<script src=”http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js”></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
-
-    $(document).keydown(function (event) {
-        var message = 'Content is protected\nYou cannot view the Dev Tools.';
-        if (event.keyCode == 123) { // Prevent F12
-            alert(message);
-            return false;
-        } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I
-            alert(message);
-            return false;
-        }
+    $(document).ready(function () {
+        $(document).keydown(function (event) {
+            var message = 'Content is protected\nYou cannot view the Dev Tools.';
+            if (event.keyCode == 123) { // Prevent F12
+                alert(message);
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I
+                alert(message);
+                return false;
+            }
+        });
     });
 </script>
 
