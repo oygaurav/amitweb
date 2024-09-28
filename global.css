@@ -1213,6 +1213,10 @@ h2 {
 .modal-header {
     border-bottom: none;
   }
+
+  .btn-close {
+    filter: invert(1); 
+}
   
   .modal-footer {
     border-top: none;
