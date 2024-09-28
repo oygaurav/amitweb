@@ -1186,6 +1186,12 @@ h2 {
 .modal-content{
     background-image: url(./assets/hero/bg3.png);
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .modal-content{
+        background-image: url(./assets/hero/bg5.png);
+    }
+
+}
 
 .modal-icon img{
     /* width: 4rem; */
