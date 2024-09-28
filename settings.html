@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Load Capacity Tool</title>
+    <link rel="icon" type="images/x-icon"
+        href="https://www.quest-global.com/wp-content/themes/quest/assets/images/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- font style    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+    <!-- sidebar starts from here -->
+
+
+
+    <div class="sidebar d-md-block">
+        <nav class="navbar">
+            <div class="nav-wrapper w-100" id="navbarsExample01">
+                <div class="d-flex justify-content-center">
+                    <a class="brand" aria-current="page" href="#"><img src="./assets/logo/logo4.png" alt=""></a>
+                </div>
+    
+                
+                <ul class="navbar-nav me-auto mb-2">
+                    
+                    <li class="nav-item dash-menu">
+                        <a class="nav-link" href="./dashboard.html"><i class="fa-regular fa-user"></i> &nbsp;
+                            Profile</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./event-list.html"><i class="fa-solid fa-list"></i> &nbsp; Event List</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="./contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg> &nbsp; Contact Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="./settings.html"><i class="fa-solid fa-gears"></i> &nbsp; Settings</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp;
+                            Logout</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+    </div>
+
+    <div class="sidebar d-md-none">
+        <nav class="navbar">
+            <div class="nav-wrapper w-100 d-flex justify-content-between align-items-center" id="navbarsExample01">
+                <!-- Logo on the left -->
+                <a class="brand" aria-current="page" href="#">
+                    <img src="./assets/logo/logo4.png" alt="Click & Win">
+                </a>
+    
+                <!-- Toggle button for mobile view on the right -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+    
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="sidebarMenu">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item dash-menu">
+                        <a class="nav-link" href="./dashboard.html"><i class="fa-regular fa-user"></i> &nbsp; Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./event-list.html"><i class="fa-solid fa-list"></i> &nbsp; Event List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html"><i class="fa-solid fa-phone"></i> &nbsp; Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./settings.html"><i class="fa-solid fa-gears"></i> &nbsp; Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    
+    <!-- dashboard starts from here -->
+    <div class="dashboard">
+        <nav class="navbar navbar-dash-2 fixed-top d-md-block">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h4>Settings</h4>
+                </a>
+            </div>
+        </nav>
+        <div class="d-md-none navbar-dash-2">
+            <h4>Settings</h4>
+        </div>
+    
+        <div class="container dash-bu-item">
+            <div class="row bu-item">
+                <div class="col-md-12">
+                    <div class="bu-start">
+                        <h5>Summary</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- dashboard ends here -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./assets/script/script.js"></script>
+    <script src="https://kit.fontawesome.com/fa4699cbe9.js" crossorigin="anonymous"></script>
+
+    
+
+
+</body>
+
+</html>
+

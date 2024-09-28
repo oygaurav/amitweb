@@ -1180,3 +1180,36 @@ h2 {
 
 }
 /* how to play ends here */
+
+/* popup starts */
+
+.modal-icon img{
+    /* width: 4rem; */
+    background-color: grey; 
+    border-radius: 50%; 
+    padding: 4px; 
+    display: inline-block; 
+    display: block; 
+    width: 100%;
+    height: auto;
+    max-width: 80px; 
+}
+
+.btn-account-modal{
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+.modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
