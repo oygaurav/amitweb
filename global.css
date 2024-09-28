@@ -1183,16 +1183,20 @@ h2 {
 
 /* popup starts */
 
+.modal-content{
+    background-image: url(./assets/hero/bg3.png);
+}
+
 .modal-icon img{
     /* width: 4rem; */
-    background-color: grey; 
+    /* background-color: grey; 
     border-radius: 50%; 
-    padding: 4px; 
+    padding: 4px;  */
     display: inline-block; 
     display: block; 
     width: 100%;
     height: auto;
-    max-width: 80px; 
+    max-width: 120px; 
 }
 
 .btn-account-modal{
